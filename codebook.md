@@ -1,8 +1,10 @@
-   **subjectID**: A unique number identifying the volunteer.
+   **subjectID**:
+	 A unique number identifying the volunteer.
    int  
    range = -
    
-   **activity**: 
+   **activity**:
+	 
    string 
    range = {WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING}
 
@@ -10,83 +12,240 @@
    ** Feature Variables **
    For detailed description please view *features_info.txt* inside the data set directory.
 	
-   tBodyAcc-mean()-X              : num  . . . . . ...
-   tBodyAcc-mean()-Y              : num  -. -. -. -. -. ...
-   tBodyAcc-mean()-Z              : num  -. -. -. -. -. ...
-   tBodyAcc-std()-X               : num  -. -. -. -. -. ...
-   tBodyAcc-std()-Y               : num  -. -. -. -. -. ...
-   tBodyAcc-std()-Z               : num  -. -. -. -. -. ...
-   tGravityAcc-mean()-X           : num  . . . . . ...
-   tGravityAcc-mean()-Y           : num  -. -. -. -. -. ...
-   tGravityAcc-mean()-Z           : num  . . . . . ...
-   tGravityAcc-std()-X            : num  -. -. - -. -. ...
-   tGravityAcc-std()-Y            : num  -. -. -. -. -. ...
-   tGravityAcc-std()-Z            : num  -. -. -. -. -. ...
-   tBodyAccJerk-mean()-X          : num  . . . . . ...
-   tBodyAccJerk-mean()-Y          : num  . . . . . ...
-   tBodyAccJerk-mean()-Z          : num  -. . -. -. . ...
-   tBodyAccJerk-std()-X           : num  -. -. -. -. -. ...
-   tBodyAccJerk-std()-Y           : num  -. -. -. -. -. ...
-   tBodyAccJerk-std()-Z           : num  -. -. -. -. -. ...
-   tBodyGyro-mean()-X             : num  -. -. -. -. -. ...
-   tBodyGyro-mean()-Y             : num  -. -. -. -. -. ...
-   tBodyGyro-mean()-Z             : num  . . . . . ...
-   tBodyGyro-std()-X              : num  -. -. -. -. -. ...
-   tBodyGyro-std()-Y              : num  -. -. -. -. -. ...
-   tBodyGyro-std()-Z              : num  -. -. -. -. -. ...
-   tBodyGyroJerk-mean()-X         : num  -. -. -. -. -. ...
-   tBodyGyroJerk-mean()-Y         : num  -. -. -. -. -. ...
-   tBodyGyroJerk-mean()-Z         : num  -. -. -. -. -. ...
-   tBodyGyroJerk-std()-X          : num  -. -. -. -. -. ...
-   tBodyGyroJerk-std()-Y          : num  -. -. -. -. -. ...
-   tBodyGyroJerk-std()-Z          : num  -. -. -. -. -. ...
-   tBodyAccMag-mean()             : num  -. -. -. -. -. ...
-   tBodyAccMag-std()              : num  -. -. -. -. -. ...
-   tGravityAccMag-mean()          : num  -. -. -. -. -. ...
-   tGravityAccMag-std()           : num  -. -. -. -. -. ...
-   tBodyAccJerkMag-mean()         : num  -. -. -. -. -. ...
-   tBodyAccJerkMag-std()          : num  -. -. -. -. -. ...
-   tBodyGyroMag-mean()            : num  -. -. -. -. -. ...
-   tBodyGyroMag-std()             : num  -. -. -. -. -. ...
-   tBodyGyroJerkMag-mean()        : num  -. -. -. -. -. ...
-   tBodyGyroJerkMag-std()         : num  -. -. -. -. -. ...
-   fBodyAcc-mean()-X              : num  -. -. -. -. -. ...
-   fBodyAcc-mean()-Y              : num  -. -. -. -. -. ...
-   fBodyAcc-mean()-Z              : num  -. -. -. -. -. ...
-   fBodyAcc-std()-X               : num  -. -. -. -. -. ...
-   fBodyAcc-std()-Y               : num  -. -. -. -. -. ...
-   fBodyAcc-std()-Z               : num  -. -. -. -. -. ...
-   fBodyAcc-meanFreq()-X          : num  . . . . . ...
-   fBodyAcc-meanFreq()-Y          : num  . . -. . . ...
-   fBodyAcc-meanFreq()-Z          : num  -. -. . . . ...
-   fBodyAccJerk-mean()-X          : num  -. -. -. -. -. ...
-   fBodyAccJerk-mean()-Y          : num  -. -. -. -. -. ...
-   fBodyAccJerk-mean()-Z          : num  -. -. -. -. -. ...
-   fBodyAccJerk-std()-X           : num  -. -. -. -. -. ...
-   fBodyAccJerk-std()-Y           : num  -. -. -. -. -. ...
-   fBodyAccJerk-std()-Z           : num  -. -. -. -. -. ...
-   fBodyAccJerk-meanFreq()-X      : num  . . . . . ...
-   fBodyAccJerk-meanFreq()-Y      : num  . -. -. -. . ...
-   fBodyAccJerk-meanFreq()-Z      : num  . . . . . ...
-   fBodyGyro-mean()-X             : num  -. -. -. -. -. ...
-   fBodyGyro-mean()-Y             : num  -. -. -. -. -. ...
-   fBodyGyro-mean()-Z             : num  -. -. -. -. -. ...
-   fBodyGyro-std()-X              : num  -. -. -. -. -. ...
-   fBodyGyro-std()-Y              : num  -. -. -. -. -. ...
-   fBodyGyro-std()-Z              : num  -. -. -. -. -. ...
-   fBodyGyro-meanFreq()-X         : num  -. -. -. . -. ...
-   fBodyGyro-meanFreq()-Y         : num  . -. -. -. -. ...
-   fBodyGyro-meanFreq()-Z         : num  . -. -. -. -. ...
-   fBodyAccMag-mean()             : num  -. -. -. -. -. ...
-   fBodyAccMag-std()              : num  -. -. -. -. -. ...
-   fBodyAccMag-meanFreq()         : num  -. -. . . . ...
-   fBodyBodyAccJerkMag-mean()     : num  -. -. -. -. -. ...
-   fBodyBodyAccJerkMag-std()      : num  -. -. -. -. -. ...
-   fBodyBodyAccJerkMag-meanFreq() : num  . . . . . ...
-   fBodyBodyGyroMag-mean()        : num  -. -. -. -. -. ...
-   fBodyBodyGyroMag-std()         : num  -. -. -. -. -. ...
-   fBodyBodyGyroMag-meanFreq()    : num  -. -. -. -. -. ...
-   fBodyBodyGyroJerkMag-mean()    : num  -. -. -. -. -. ...
-   fBodyBodyGyroJerkMag-std()     : num  -. -. -. -. -. ...
-   fBodyBodyGyroJerkMag-meanFreq(): num  -. . . . . ...
-> 
+   tBodyAcc-mean()-X              :
+	 number
+  
+   tBodyAcc-mean()-Y              :
+	 number
+  
+   tBodyAcc-mean()-Z              :
+	 number
+  
+   tBodyAcc-std()-X               :
+	 number
+  
+   tBodyAcc-std()-Y               :
+	 number
+  
+   tBodyAcc-std()-Z               :
+	 number
+  
+   tGravityAcc-mean()-X           :
+	 number
+  
+   tGravityAcc-mean()-Y           :
+	 number
+  
+   tGravityAcc-mean()-Z           :
+	 number
+  
+   tGravityAcc-std()-X            :
+	 number
+  
+   tGravityAcc-std()-Y            :
+	 number
+  
+   tGravityAcc-std()-Z            :
+	 number
+  
+   tBodyAccJerk-mean()-X          :
+	 number
+  
+   tBodyAccJerk-mean()-Y          :
+	 number
+  
+   tBodyAccJerk-mean()-Z          :
+	 number
+  
+   tBodyAccJerk-std()-X           :
+	 number
+  
+   tBodyAccJerk-std()-Y           :
+	 number
+  
+   tBodyAccJerk-std()-Z           :
+	 number
+  
+   tBodyGyro-mean()-X             :
+	 number
+  
+   tBodyGyro-mean()-Y             :
+	 number
+  
+   tBodyGyro-mean()-Z             :
+	 number
+  
+   tBodyGyro-std()-X              :
+	 number
+  
+   tBodyGyro-std()-Y              :
+	 number
+  
+   tBodyGyro-std()-Z              :
+	 number
+  
+   tBodyGyroJerk-mean()-X         :
+	 number
+  
+   tBodyGyroJerk-mean()-Y         :
+	 number
+  
+   tBodyGyroJerk-mean()-Z         :
+	 number
+  
+   tBodyGyroJerk-std()-X          :
+	 number
+  
+   tBodyGyroJerk-std()-Y          :
+	 number
+  
+   tBodyGyroJerk-std()-Z          :
+	 number
+  
+   tBodyAccMag-mean()             :
+	 number
+  
+   tBodyAccMag-std()              :
+	 number
+  
+   tGravityAccMag-mean()          :
+	 number
+  
+   tGravityAccMag-std()           :
+	 number
+  
+   tBodyAccJerkMag-mean()         :
+	 number
+  
+   tBodyAccJerkMag-std()          :
+	 number
+  
+   tBodyGyroMag-mean()            :
+	 number
+  
+   tBodyGyroMag-std()             :
+	 number
+  
+   tBodyGyroJerkMag-mean()        :
+	 number
+  
+   tBodyGyroJerkMag-std()         :
+	 number
+  
+   fBodyAcc-mean()-X              :
+	 number
+  
+   fBodyAcc-mean()-Y              :
+	 number
+  
+   fBodyAcc-mean()-Z              :
+	 number
+  
+   fBodyAcc-std()-X               :
+	 number
+  
+   fBodyAcc-std()-Y               :
+	 number
+  
+   fBodyAcc-std()-Z               :
+	 number
+  
+   fBodyAcc-meanFreq()-X          :
+	 number
+  
+   fBodyAcc-meanFreq()-Y          :
+	 number
+  
+   fBodyAcc-meanFreq()-Z          :
+	 number
+  
+   fBodyAccJerk-mean()-X          :
+	 number
+  
+   fBodyAccJerk-mean()-Y          :
+	 number
+  
+   fBodyAccJerk-mean()-Z          :
+	 number
+  
+   fBodyAccJerk-std()-X           :
+	 number
+  
+   fBodyAccJerk-std()-Y           :
+	 number
+  
+   fBodyAccJerk-std()-Z           :
+	 number
+  
+   fBodyAccJerk-meanFreq()-X      :
+	 number
+  
+   fBodyAccJerk-meanFreq()-Y      :
+	 number
+  
+   fBodyAccJerk-meanFreq()-Z      :
+	 number
+  
+   fBodyGyro-mean()-X             :
+	 number
+  
+   fBodyGyro-mean()-Y             :
+	 number
+  
+   fBodyGyro-mean()-Z             :
+	 number
+  
+   fBodyGyro-std()-X              :
+	 number
+  
+   fBodyGyro-std()-Y              :
+	 number
+  
+   fBodyGyro-std()-Z              :
+	 number
+  
+   fBodyGyro-meanFreq()-X         :
+	 number
+  
+   fBodyGyro-meanFreq()-Y         :
+	 number
+  
+   fBodyGyro-meanFreq()-Z         :
+	 number
+  
+   fBodyAccMag-mean()             :
+	 number
+  
+   fBodyAccMag-std()              :
+	 number
+  
+   fBodyAccMag-meanFreq()         :
+	 number
+  
+   fBodyBodyAccJerkMag-mean()     :
+	 number
+  
+   fBodyBodyAccJerkMag-std()      :
+	 number
+  
+   fBodyBodyAccJerkMag-meanFreq() :
+	 number
+  
+   fBodyBodyGyroMag-mean()        :
+	 number
+  
+   fBodyBodyGyroMag-std()         :
+	 number
+  
+   fBodyBodyGyroMag-meanFreq()    :
+	 number
+  
+   fBodyBodyGyroJerkMag-mean()    :
+	 number
+  
+   fBodyBodyGyroJerkMag-std()     :
+	 number
+  
+   fBodyBodyGyroJerkMag-meanFreq():
+	 number
+  
