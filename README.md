@@ -1,5 +1,5 @@
-GettingAndCleaningData
-======================
+Tidying Up Data
+===============
 The R script run_analysis.R asumes that Samsung data is available in a directory named **dataset** which is at the same level as the script. For example in this GIT repo the script run_analysis is inside the top level directory. Right beside it is a directory named **dataset** that contains all raw data as downloaded from the project's page. The script prform step 1-5 described on the project's page as below. 
 
 Step1:
