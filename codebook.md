@@ -1,11 +1,9 @@
-   **subjectID**:
-	 A unique number identifying the volunteer.
-   int  
-   range = -
+   **subjectID**: A unique number identifying the volunteer.
+   integer
+   range = 1-30
    
-   **activity**:
-	 
-   string 
+   **activity**: A string identifying one of the six activities for which an observation was recorded.
+   String 
    range = {WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING}
 
 	
